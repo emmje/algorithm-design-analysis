@@ -1,5 +1,5 @@
 
-/** 
+/** Psuedo code for finding the maximum element
 MAX_ELEMENT(elements, n)
   max = elements[0]
   for i = 1 to n-1
@@ -8,9 +8,10 @@ MAX_ELEMENT(elements, n)
   return max
  **/
  #include <stdio.h>
-int max_element(int elements[], int n) {
-  int max = elements[0];
-  for (int i = 1; i < n; i++) {
+int max_element(int elements[], int n) //  This is the function which takes two inputs: elements (the array) and n (the number of elements in the array)
+{
+  int max = elements[0]; //We initialize max to the first maximum element of the array 
+  for (int i = 1; i < n; i++) { // We start a loop that will iterate from the second element of the array (i = 1) to the last element (n-1)
     if (elements[i] > max) {
       max = elements[i];
     }
